@@ -27,7 +27,7 @@ function App() {
     </section>
     <section className="about-us-section">
       <div className="about-us-container">
-        <h2 className="about-us-title">¿Quienes Somos?</h2>
+        <h2 className="about-us-title">¿Quiénes Somos?</h2>
         <p className="about-us-description">Somos un equipo con dinamismo y plena dedicación al cliente, abordando la actividad del mismo en su totalidad, brindando un servicio que va más allá de la liquidación impositiva</p>
         <h2 className="about-us-title">¿Cuál es nuestra misión?</h2>
         <p className="about-us-description">Ser una opción en cada problemática diaria, convirtiéndonos en un eslabón que suma a la perspectiva y al fortalecimiento diario del cliente.</p>
