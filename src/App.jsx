@@ -16,7 +16,7 @@ function App() {
         <a href="#">Contacto</a>
         <label htmlFor="check-button" className="cross-icon">
           <iconify-icon icon="codicon:chrome-close" width="40" height="40"></iconify-icon>
-      </label>
+        </label>
       </nav>
     </header>
     <section id="banner-section">

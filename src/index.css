@@ -25,6 +25,7 @@ header{
 
 .menu{
   margin-right: 10px;
+  transition: 0.4s;
 }
 
 .menu a{
@@ -65,7 +66,7 @@ header{
   order: 1;
 }
 
-.hamburguer-icon, .cross-icon{
+.hamburguer-icon, .cross-icon, #check-button{
   display: none;
 }
 
@@ -203,18 +204,18 @@ header{
     display: block;
   }
 
+
   .menu{
     background: #ede7e3;
     position: fixed;
     width: 100%;
-    left: 0;
     height: 100vh;
     top: 0;
     right: -100%;
     z-index: 0;
     text-align: center;
     padding: 100px 0;
-    transition: 0.4s;
+    transition: 0.9s;
   }
 
   .menu a{
