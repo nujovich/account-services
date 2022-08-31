@@ -264,6 +264,21 @@ header{
   #check-button:checked ~ .menu{
     right: 0;
   }
+
+  .profile-container{
+    display: block;
+  }
+
+  .image-container{
+    margin-top: 25px;
+  }
+  .services-container{
+    display: block;
+  }
+
+  .icon-container{
+    margin-top: 10px;
+  }
   
 }
 
