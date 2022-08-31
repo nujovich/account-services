@@ -4,7 +4,8 @@ function App() {
   return (
     <div className="App">
     <header>
-      <h2 className="logo">Marcos | Agustín</h2>
+      <h2 className="lg-logo">Marcos | Agustín</h2>
+      <h2 className="sm-logo">M | A</h2>
       <input type="checkbox" id="check-button"></input>
       <label htmlFor="check-button" className="hamburguer-icon">
         <iconify-icon icon="eva:menu-outline" width="40" height="40"></iconify-icon>

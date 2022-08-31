@@ -18,9 +18,13 @@ header{
   align-items: center;
 }
 
-.logo {
+.lg-logo {
   text-transform: uppercase;
   padding: 0 20px;
+}
+
+.sm-logo{
+  display: none;
 }
 
 .menu{
@@ -199,6 +203,16 @@ header{
 /* RESPONSIVE */
 
 @media(max-width: 768px){
+
+  .sm-logo{
+    display: flex;
+    align-self: center;
+    padding: 0 20px;
+  }
+
+  .lg-logo{
+    display: none;
+  }
 
   .hamburguer-icon, .cross-icon, .menu a{
     display: block;
