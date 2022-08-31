@@ -11,7 +11,6 @@ function App() {
         <iconify-icon icon="eva:menu-outline" width="40" height="40"></iconify-icon>
       </label>
       <nav className="menu">
-        <a href="#about-us-section">Sobre Nosotros</a>
         <a href="#services-section">Servicios</a>
         <a href="#">Clientes</a>
         <a href="#">Contacto</a>
@@ -24,6 +23,9 @@ function App() {
       <div className="banner-container">
         <h2>Soluciones Contables</h2>
         <p>por Marcos Markocic y Agustín Rodríguez Otero</p>
+        <a href="#about-us-section">
+          <iconify-icon icon="bi:chevron-double-down" width="90" height="90"></iconify-icon>
+      </a>
       </div>
     </section>
     <section id="about-us-section">

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  scroll-behavior: smooth !important;
 }
 
 /* HEADER */
@@ -27,9 +28,6 @@ header{
   display: none;
 }
 
-.menu{
-  transition: 0.4s;
-}
 
 .menu a{
   text-decoration: none;
@@ -85,7 +83,7 @@ header{
 #banner-section{
   background-image: url(../src/assets/images/accounting.jpg);
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
@@ -95,16 +93,38 @@ header{
   flex-direction: column;
   align-items: center;
   padding: 80px 80px;
+  padding-top: 30vh;
 }
 
 .banner-container h2{
+  text-align: center;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 800;
 }
 
 .banner-container p{
-  padding-top: 20px;
+  padding-top: 70px;
+  font-size: 20px;
+}
+
+.banner-container a{
+  text-decoration: none;
+  color: black;
+  padding-top: 70px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 /* ABOUT US */
@@ -112,7 +132,7 @@ header{
 #about-us-section{
   width: 100%;
   background-color: #82C0CC;
-
+  transition: 0.4s;
 }
 
 .about-us-container{
