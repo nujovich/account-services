@@ -39,6 +39,7 @@ header{
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+  width: fit-content;
 }
 
 .menu a::before{
@@ -112,10 +113,10 @@ header{
   text-decoration: none;
   color: black;
   padding-top: 70px;
-  animation: jumpInfinite 1.5s infinite;
+  animation: jump 1.5s infinite;
 }
 
-@keyframes jumpInfinite {
+@keyframes jump {
   0% {
     margin-top: 0;
   }
@@ -252,7 +253,7 @@ header{
   }
 
   .menu a{
-    margin: 50px 50px;
+    margin: 50px 160px;
   }
 
   .cross-icon{
