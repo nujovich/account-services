@@ -29,7 +29,13 @@ header{
 }
 
 
-.menu a{
+.menu-items{
+  display: flex;
+  list-style: none;
+}
+
+
+.menu-link{
   text-decoration: none;
   text-transform: capitalize;
   margin-right: 10px;
@@ -42,7 +48,7 @@ header{
   width: fit-content;
 }
 
-.menu a::before{
+.menu-link::before{
   content: "";
   position: absolute;
   z-index: -1;
@@ -59,7 +65,7 @@ header{
   transition-timing-function: ease-out;
 }
 
-.menu a:hover::before, .menu a:focus::before, .menu:active::before {
+.menu-link:hover::before, .menu-link:focus::before, .menu-link:active::before {
   left: 0;
   right: 0;
 }
@@ -82,7 +88,7 @@ header{
 /* BANNER */
 
 #banner-section{
-  background-image: url(../src/assets/images/accounting.jpg);
+  background-image: url(/assets/images/accounting.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -182,7 +188,8 @@ header{
 
 .services-container{
   padding: 20px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2em;
 }
 
@@ -194,6 +201,15 @@ header{
 
 .services-element h3, p{
   padding-top: 20px;
+  text-align: center;
+}
+
+.services-element ul{
+  padding-top: 10px;
+}
+
+.services-element li{
+  list-style: none;
   text-align: center;
 }
 
@@ -235,7 +251,7 @@ header{
     display: none;
   }
 
-  .hamburguer-icon, .cross-icon, .menu a{
+  .hamburguer-icon, .cross-icon, .menu-items{
     display: block;
   }
 
@@ -250,10 +266,12 @@ header{
     z-index: 0;
     text-align: center;
     transition: 0.9s;
+    overflow: hidden;
   }
 
-  .menu a{
-    margin: 50px 160px;
+  .menu-items li{
+    padding-top: 20px;
+    margin-top: 40px;
   }
 
   .cross-icon{
